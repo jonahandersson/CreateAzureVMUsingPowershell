@@ -8,7 +8,8 @@ Set-AzContext -SubscriptionName '<<Name of Azure Subscription Account>>'
 New-AzResourceGroup -Name "rg-azurevm-demo-powershell" -Location "NorthEU"
 
 #Create a credential to use in the VM creation
-$username = 'azurevmadmin'
+#NOTE: Please change the username, password with security in mind 
+$username = 'azurevmadmin' 
 $password = ConvertTo-SecureString 'pa$$word123$%^&*' -AsPlainText -Force
 $AzVMWindowsCredentials = New-Object System.Management.Automation.PSCredential ($username, $password)
 
