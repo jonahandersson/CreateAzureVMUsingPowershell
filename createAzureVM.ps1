@@ -5,7 +5,7 @@ Connect-AzAccount -SubscriptionName '<<Name of Azure Subscription Account>>'
 Set-AzContext -SubscriptionName '<<Name of Azure Subscription Account>>'
 
 #Create a Resource Group connected to the set Aure Subscription
-New-AzResourceGroup -Name "rg-azurevm-demo-powershell" -Location "NorthEU"
+New-AzResourceGroup -Name "rg-azurevm-demo-powershell" -Location "NorthEU" 
 
 #Create a credential to use in the VM creation
 #NOTE: Please change the username, password with security in mind 
@@ -27,7 +27,8 @@ Get-AzPublicIpAddress `
     -ResourceGroupName 'rg-azurevm-demo-powershell' `
     -Name 'azvmdemo-powershell-w2019dc' | Select-Object IpAddress
 
-#TODO: Open an RDP Client and log into it using this IP address and the credential defined above.
+#TODO: Remotely access new Azure VM using Remote Desktop via RDP Client
+#NOTE Login using Public IP address and the admin user credetials 
 
 
 #Clean up after this demo
