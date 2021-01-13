@@ -14,7 +14,7 @@ $password = ConvertTo-SecureString 'pa$$word123$%^&*' -AsPlainText -Force
 $AzVMWindowsCredentials = New-Object System.Management.Automation.PSCredential ($username, $password)
 
 #Create a Windows Virtual Machine based on desired VM Image, ex. Windows Server 2019 Datacenter 
-New-AzVM `
+New-AzVM 
     -ResourceGroupName 'psdemo-rg' `
     -Name 'azvmdemo-powershell-w2019dc' `
     -Image 'Win2019Datacenter' `
