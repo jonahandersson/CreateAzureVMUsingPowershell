@@ -10,3 +10,7 @@ For Microsoft Azure's Documentation in Step-By-Step Guide on how to use the Azur
 
 Learn how remotely connect to your Azure VM via RDP and install the IIS web server, check out the link below:
 https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-powershell 
+
+#Check out my article at DEV Community about this repo 
+
+https://dev.to/jonahandersson/virtualization-and-deploying-azure-virtual-machines-using-powershell-1l83
